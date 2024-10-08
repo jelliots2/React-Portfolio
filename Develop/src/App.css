@@ -1,0 +1,261 @@
+
+header {
+  width: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background-color: rgb(0, 31, 63);
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+header h1 {
+  margin-left: 20px;
+  font-size: 50px;
+  color: white
+  
+}
+
+nav ul {
+  display: inline-flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: flex;
+  margin-right: 50px;
+  color: white;
+  font-size: px;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+div h2 {
+  color: white;
+  margin-left: 50px;
+  margin-top: 25px;
+  padding: 10px;
+}
+
+div h3 {
+  color: white;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+div h4 {
+  color: white;
+  margin-left: 70px;
+  text-decoration: underline;
+}
+
+div p {
+  color: rgb(195, 195, 195);
+  margin-left: 50px;
+}
+
+div ul {
+  color: white;
+  margin-left: 50px;
+}
+
+div li {
+  color: white;
+  
+}
+
+div a {
+  color: white;
+}
+
+div img {
+  width: 10%;
+  height: auto;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  height: 100%;
+  width: 25%;
+  color: white;
+  margin-left: 50px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  display: block;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+main {
+  flex: 1; 
+  background-color: rgb(58, 109, 140);
+  margin: 0; 
+  padding: 0; 
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+}
+
+.main-content {
+  flex: 1; 
+  background-color: #f0f0f0; 
+}
+
+footer {
+  background-color: rgb(234, 216, 177);
+  color: white;
+  padding: 10px 0;
+  text-align: left;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0; 
+}
+
+footer p {
+  color: black;
+  margin-left: 25px;
+}
+
+footer li {
+  color: rgb(105, 105, 105);
+}
+
+footer a {
+  color: black;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.project-image:hover {
+  transform: scale(1.05); 
+}
+
+.project-card h3 {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  color: white;
+  display: none;
+}
+
+.project-card p {
+  margin: 0 0 15px 0;
+  color: #ffffff;
+  display: none;
+}
+
+/* Tablet - 768px and up */
+@media (min-width: 768px) {
+  header {
+    padding: 10px 20px; /* Increase padding for larger screens */
+  }
+
+  header h1 {
+    font-size: 40px; /* Slightly reduce font size for tablets */
+  }
+
+  nav ul {
+    gap: 30px; /* Increase spacing between nav links */
+  }
+
+  nav ul li a {
+    font-size: 18px; /* Adjust font size */
+    margin-right: 20px; /* Reduce margin on larger screens */
+  }
+
+  .project-image {
+    width: 50%; /* Set width for tablet */
+  }
+
+  .project-image {
+    width: 50%; /* Increase image size for tablets */
+  }
+}
+
+/* Desktop - 1024px and up */
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 60px; /* Increase header size for desktops */
+  }
+
+  nav ul {
+    gap: 40px; /* Further increase gap for nav items */
+  }
+
+  nav ul li a {
+    font-size: 22px; /* Increase font size for nav links */
+    margin-right: 50px; /* Restore original margin */
+  }
+
+  .project-image {
+    width: 100%; /* Image fills full card width */
+  }
+
+  .main-content {
+    padding: 40px; /* Increase padding in the main content for desktop */
+  }
+
+  footer {
+    padding: 20px 0; /* Add more padding for larger screens */
+  }
+  .project-image {
+    width: 10%; /* Set smaller width for desktop */
+  }
+}
+
+.hidden {
+  display: none;
+}
