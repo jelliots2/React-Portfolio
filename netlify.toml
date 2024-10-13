@@ -4,3 +4,6 @@
 
 [context.production.environment]
   NODE_VERSION = "18"
+
+[build.environment]
+  CI = "false"
