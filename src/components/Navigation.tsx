@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navigation: React.FX = () => {
+const Navigation: React.FC = () => {
   return (
     <nav>
       <ul>
