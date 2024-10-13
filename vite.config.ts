@@ -4,7 +4,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  build: {
-    outDir: 'dist', // Ensures that Vite outputs files to 'dist'
-  },
+  base: './dist', // You can modify this if deploying to a subpath
 });
